@@ -767,9 +767,32 @@ h3 {
 }
 
 .footer {
+  position: relative;
+  overflow: hidden;
   border-top: 1px solid rgba(238, 246, 255, 0.22);
   background: rgba(2, 10, 18, 0.86);
   backdrop-filter: blur(20px);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(86%, 1120px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(68, 242, 255, 0.88), transparent);
+  box-shadow: 0 0 24px rgba(68, 242, 255, 0.42);
+  transform: translateX(-50%);
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  inset: auto 10% -90px 10%;
+  height: 180px;
+  background: radial-gradient(circle, rgba(0, 163, 255, 0.18), transparent 64%);
+  pointer-events: none;
 }
 
 .footer-content {
@@ -782,13 +805,15 @@ h3 {
 }
 
 .footer-contact-card {
+  position: relative;
+  z-index: 1;
   display: grid;
   justify-items: center;
   gap: 26px;
   padding: 26px 18px;
   color: var(--text);
   text-align: center;
-  transition: color 0.22s ease, transform 0.22s ease;
+  transition: color 0.22s ease, transform 0.22s ease, text-shadow 0.22s ease;
 }
 
 .footer-contact-card svg {
@@ -813,6 +838,7 @@ h3 {
 
 .footer-contact-card:hover {
   color: var(--cyan);
+  text-shadow: 0 0 18px rgba(68, 242, 255, 0.34);
   transform: translateY(-6px);
 }
 
