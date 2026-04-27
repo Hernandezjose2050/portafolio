@@ -198,6 +198,7 @@ const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 let particles = [];
 let animationFrame;
+let huePulse = 0;
 const pointer = {
   x: null,
   y: null,
@@ -229,9 +230,9 @@ function drawConnections() {
       const dy = particles[i].y - particles[j].y;
       const distance = Math.hypot(dx, dy);
 
-      if (distance < 145) {
-        ctx.strokeStyle = `rgba(68, 242, 255, ${0.2 - distance / 760})`;
-        ctx.lineWidth = 1;
+      if (distance < 165) {
+        ctx.strokeStyle = `rgba(68, 242, 255, ${0.34 - distance / 620})`;
+        ctx.lineWidth = 1.15;
         ctx.beginPath();
         ctx.moveTo(particles[i].x, particles[i].y);
         ctx.lineTo(particles[j].x, particles[j].y);
@@ -263,6 +264,7 @@ function drawPointerConnections() {
 
 function animateParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  huePulse += 0.01;
 
   particles.forEach((particle) => {
     particle.x += particle.speedX;
@@ -285,9 +287,9 @@ function animateParticles() {
 
     ctx.beginPath();
     ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(68, 242, 255, ${particle.alpha})`;
+    ctx.fillStyle = `rgba(68, 242, 255, ${Math.min(0.95, particle.alpha + Math.sin(huePulse) * 0.08)})`;
     ctx.shadowColor = "rgba(68, 242, 255, 0.55)";
-    ctx.shadowBlur = 10;
+    ctx.shadowBlur = 14;
     ctx.fill();
     ctx.shadowBlur = 0;
   });
