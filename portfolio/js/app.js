@@ -192,7 +192,10 @@ projectCards.forEach((card) => {
   });
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearElement = document.getElementById("year");
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
 
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
