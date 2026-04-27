@@ -1,0 +1,60 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 514 >>
+stream
+BT
+/F1 24 Tf
+72 720 Td
+(Carlos Hernandez) Tj
+/F1 14 Tf
+0 -34 Td
+(Backend Developer | Software Developer | Systems Student) Tj
+0 -34 Td
+(Perfil) Tj
+/F1 11 Tf
+0 -20 Td
+(Desarrollador enfocado en backend, APIs REST, bases de datos y soluciones web.) Tj
+0 -26 Td
+(Tecnologias) Tj
+0 -18 Td
+(HTML, CSS, JavaScript, Python, Flask, MySQL, Java, AWS, Git.) Tj
+0 -26 Td
+(Proyectos) Tj
+0 -18 Td
+(Sistema E-commerce con Flask y MySQL) Tj
+0 -16 Td
+(Conversor de Monedas en Java) Tj
+0 -16 Td
+(Sistema de Inventario) Tj
+0 -16 Td
+(API REST con Flask) Tj
+0 -30 Td
+(Actualiza este archivo con tu CV final antes de publicarlo.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Root 1 0 R /Size 6 >>
+startxref
+875
+%%EOF

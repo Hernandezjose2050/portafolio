@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#06111f"/>
+  <rect x="110" y="96" width="740" height="348" rx="18" fill="#020711" stroke="#00a3ff"/>
+  <g fill="#0f2746" stroke="#44f2ff">
+    <rect x="160" y="152" width="150" height="100" rx="8"/>
+    <rect x="350" y="152" width="150" height="100" rx="8"/>
+    <rect x="540" y="152" width="150" height="100" rx="8"/>
+    <rect x="160" y="290" width="150" height="100" rx="8"/>
+    <rect x="350" y="290" width="150" height="100" rx="8"/>
+    <rect x="540" y="290" width="150" height="100" rx="8"/>
+  </g>
+  <path d="M724 174h74M724 214h46M724 312h74M724 352h46" stroke="#44f2ff" stroke-width="8" stroke-linecap="round"/>
+  <text x="272" y="492" fill="#eef6ff" font-family="Inter, Arial" font-size="34" font-weight="800">Sistema de Inventario</text>
+</svg>

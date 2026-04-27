@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06172b"/><stop offset="1" stop-color="#00a3ff"/></linearGradient></defs>
+  <rect width="960" height="540" fill="url(#g)"/>
+  <rect x="86" y="80" width="788" height="380" rx="20" fill="#020711" opacity=".78" stroke="#44f2ff"/>
+  <rect x="130" y="128" width="260" height="282" rx="14" fill="#0b1b32"/>
+  <rect x="428" y="128" width="360" height="50" rx="8" fill="#0b1b32"/>
+  <rect x="428" y="206" width="160" height="160" rx="14" fill="#0b1b32"/>
+  <rect x="628" y="206" width="160" height="160" rx="14" fill="#0b1b32"/>
+  <path d="M190 222h100l28 86H170zM208 222l18-44h62l18 44" fill="none" stroke="#44f2ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="428" y="410" fill="#eef6ff" font-family="Inter, Arial" font-size="34" font-weight="800">E-commerce Flask</text>
+</svg>

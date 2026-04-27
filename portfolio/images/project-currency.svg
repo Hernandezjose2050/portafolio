@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#020711"/>
+  <circle cx="275" cy="270" r="148" fill="#06172b" stroke="#00a3ff" stroke-width="4"/>
+  <circle cx="660" cy="270" r="148" fill="#06172b" stroke="#44f2ff" stroke-width="4"/>
+  <path d="M410 250h130m0 0-34-34m34 34-34 34M550 310H420m0 0 34-34m-34 34 34 34" stroke="#44f2ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="220" y="290" fill="#eef6ff" font-family="Inter, Arial" font-size="72" font-weight="800">$</text>
+  <text x="618" y="290" fill="#eef6ff" font-family="Inter, Arial" font-size="72" font-weight="800">€</text>
+  <text x="300" y="462" fill="#44f2ff" font-family="Inter, Arial" font-size="34" font-weight="800">Conversor Java</text>
+</svg>

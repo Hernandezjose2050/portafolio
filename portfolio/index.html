@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Carlos Hernandez, Backend Developer y Software Developer.">
+  <title>Carlos Hernandez | Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a href="#home" class="brand" aria-label="Inicio">
+        <span class="brand-mark">CH</span>
+        <span>Carlos Hernandez</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#experience">Aprendizaje</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="section-kicker">Backend / Software Engineering</p>
+          <h1>Backend developer enfocado en sistemas confiables y APIs escalables.</h1>
+          <p class="hero-subtitle">
+            Diseño lógica de negocio, modelos de datos y servicios web con mentalidad de producto,
+            rendimiento y código mantenible.
+          </p>
+          <p class="typing-line">
+            <span id="typing-text"></span>
+            <span class="typing-cursor" aria-hidden="true"></span>
+          </p>
+          <p class="hero-description">
+            Soy Carlos Hernandez, estudiante de sistemas y desarrollador enfocado en APIs,
+            bases de datos, lógica de negocio y aplicaciones web modernas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects"><span>Ver Proyectos</span></a>
+            <a class="btn btn-secondary" href="images/cv-carlos-hernandez.pdf" download><span>Descargar CV</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Dashboard backend futurista">
+          <div class="backend-dashboard">
+            <div class="dashboard-topbar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>backend-console</strong>
+            </div>
+
+            <div class="dashboard-grid">
+              <article class="metric-card">
+                <span class="metric-label">APIs activas</span>
+                <strong>12</strong>
+                <small>+4 endpoints REST</small>
+              </article>
+              <article class="metric-card">
+                <span class="metric-label">DB uptime</span>
+                <strong>99.9%</strong>
+                <small>MySQL healthy</small>
+              </article>
+            </div>
+
+            <div class="terminal-window">
+              <div class="terminal-line"><span class="ok">200</span> GET /api/products</div>
+              <div class="terminal-line"><span class="ok">201</span> POST /api/orders</div>
+              <div class="terminal-line"><span class="warn">JWT</span> token verified</div>
+              <div class="terminal-line"><span class="ok">SQL</span> query optimized</div>
+            </div>
+
+            <div class="service-list">
+              <div><span></span> Flask service <strong>online</strong></div>
+              <div><span></span> MySQL cluster <strong>stable</strong></div>
+              <div><span></span> AWS deploy <strong>ready</strong></div>
+            </div>
+          </div>
+          <div class="floating-chip chip-one">Flask APIs</div>
+          <div class="floating-chip chip-two">MySQL</div>
+          <div class="floating-chip chip-three">AWS Cloud</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split-layout">
+        <div class="section-copy reveal">
+          <p class="section-kicker">Sobre mí</p>
+          <h2>Perfil técnico con enfoque en backend y mejora continua.</h2>
+          <p>
+            Me especializo en transformar requerimientos en soluciones prácticas mediante
+            arquitectura limpia, código mantenible y bases de datos bien estructuradas.
+            Mi enfoque combina aprendizaje constante, disciplina técnica y criterio para
+            resolver problemas reales.
+          </p>
+          <p>
+            Busco crecer como Software Engineer, participar en equipos de desarrollo y
+            construir sistemas confiables con Python, Flask, MySQL, Java y servicios cloud.
+          </p>
+        </div>
+
+        <div class="tech-panel reveal">
+          <h3>Tecnologías que manejo</h3>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Flask</span>
+            <span>MySQL</span>
+            <span>Java</span>
+            <span>AWS</span>
+            <span>Git</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Habilidades</p>
+          <h2>Stack técnico</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal" data-level="90">
+            <h3>HTML</h3>
+            <p>Estructura semántica, accesibilidad y SEO técnico.</p>
+            <div class="progress"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-level="88">
+            <h3>CSS</h3>
+            <p>Layouts responsive, variables, animaciones y glassmorphism.</p>
+            <div class="progress"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-level="82">
+            <h3>JavaScript</h3>
+            <p>Interactividad, validaciones, DOM y lógica frontend.</p>
+            <div class="progress"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-level="86">
+            <h3>Python</h3>
+            <p>Automatización, backend, lógica de negocio y scripts.</p>
+            <div class="progress"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-level="84">
+            <h3>Flask</h3>
+            <p>Rutas, controladores, plantillas, APIs y autenticación.</p>
+            <div class="progress"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-level="80">
+            <h3>MySQL</h3>
+            <p>Modelado, consultas, relaciones y persistencia de datos.</p>
+            <div class="progress"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-level="76">
+            <h3>Java</h3>
+            <p>Programación orientada a objetos y aplicaciones académicas.</p>
+            <div class="progress"><span></span></div>
+          </article>
+          <article class="skill-card reveal" data-level="70">
+            <h3>AWS</h3>
+            <p>Conceptos cloud, despliegue, almacenamiento y servicios base.</p>
+            <div class="progress"><span></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Proyectos</p>
+          <h2>Soluciones construidas con enfoque backend</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <img src="images/project-ecommerce.svg" alt="Sistema E-commerce con Flask y MySQL">
+            <div class="project-body">
+              <h3>Sistema E-commerce con Flask y MySQL</h3>
+              <p>Aplicación web con catálogo, carrito, gestión de usuarios, persistencia y lógica de pedidos.</p>
+              <div class="project-stack">
+                <span>Flask</span><span>MySQL</span><span>Python</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small"><span>Ver Demo</span></a>
+                <a href="#" class="btn btn-small btn-ghost"><span>GitHub</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="images/project-currency.svg" alt="Conversor de Monedas en Java">
+            <div class="project-body">
+              <h3>Conversor de Monedas en Java</h3>
+              <p>Herramienta de escritorio para conversión de divisas con lógica orientada a objetos.</p>
+              <div class="project-stack">
+                <span>Java</span><span>POO</span><span>UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small"><span>Ver Demo</span></a>
+                <a href="#" class="btn btn-small btn-ghost"><span>GitHub</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="images/project-inventory.svg" alt="Sistema de Inventario">
+            <div class="project-body">
+              <h3>Sistema de Inventario</h3>
+              <p>Gestión de productos, entradas, salidas, stock mínimo y reportes para control operativo.</p>
+              <div class="project-stack">
+                <span>Python</span><span>MySQL</span><span>CRUD</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small"><span>Ver Demo</span></a>
+                <a href="#" class="btn btn-small btn-ghost"><span>GitHub</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="images/project-api.svg" alt="API REST con Flask">
+            <div class="project-body">
+              <h3>API REST con Flask</h3>
+              <p>Servicio backend con endpoints REST, validaciones, respuestas JSON y estructura escalable.</p>
+              <div class="project-stack">
+                <span>REST</span><span>Flask</span><span>JSON</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-small"><span>Ver Demo</span></a>
+                <a href="#" class="btn btn-small btn-ghost"><span>GitHub</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Experiencia / Aprendizaje</p>
+          <h2>Formación práctica orientada a proyectos</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <h3>Proyectos académicos</h3>
+            <p>Desarrollo de aplicaciones CRUD, lógica de inventario, conversores y sistemas web conectados a bases de datos.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <h3>Aprendizaje autodidacta</h3>
+            <p>Práctica constante con Python, Flask, JavaScript, Java, Git, diseño responsive y arquitectura de APIs.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <h3>Tecnologías estudiadas</h3>
+            <p>Backend web, bases de datos relacionales, fundamentos cloud con AWS y buenas prácticas de desarrollo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="section-copy reveal">
+          <p class="section-kicker">Contacto</p>
+          <h2>Hablemos de tu próximo proyecto.</h2>
+          <p>
+            Estoy abierto a colaborar en proyectos backend, prácticas profesionales,
+            soluciones académicas y oportunidades para seguir creciendo como desarrollador.
+          </p>
+          <div class="contact-info">
+            <a href="mailto:carlos.hernandez@example.com">carlos.hernandez@example.com</a>
+            <a href="https://github.com/" target="_blank" rel="noopener">github.com/carloshernandez</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/carloshernandez</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre">
+          <small class="error-message"></small>
+
+          <label for="email">Correo</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com">
+          <small class="error-message"></small>
+
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu idea"></textarea>
+          <small class="error-message"></small>
+
+          <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+          <p class="form-success" id="form-success" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a class="footer-contact-card" href="tel:+573000000000" aria-label="Llamar por teléfono">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 3v14h10V5H7Zm3.5 15h3" />
+        </svg>
+        <strong>+57 300 000 0000</strong>
+      </a>
+
+      <a class="footer-contact-card" href="mailto:carlos.hernandez@example.com" aria-label="Enviar correo">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Zm0 2 8 5 8-5M4 16h16" />
+        </svg>
+        <strong>carlos.hernandez@example.com</strong>
+      </a>
+
+      <div class="footer-contact-card" aria-label="Ubicación">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 22s7-6.1 7-13A7 7 0 0 0 5 9c0 6.9 7 13 7 13Zm0-9.5A3.5 3.5 0 1 0 12 5a3.5 3.5 0 0 0 0 7.5Z" />
+        </svg>
+        <strong>Bogotá, Colombia</strong>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Volver arriba">↑</button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
