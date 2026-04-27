@@ -205,7 +205,7 @@ let huePulse = 0;
 const pointer = {
   x: null,
   y: null,
-  radius: 165
+  radius: 145
 };
 
 function resizeCanvas() {
@@ -215,14 +215,14 @@ function resizeCanvas() {
 }
 
 function createParticles() {
-  const count = Math.min(Math.floor(window.innerWidth / 13), 140);
+  const count = Math.min(Math.floor(window.innerWidth / 15), 110);
   particles = Array.from({ length: count }, () => ({
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random() * 2.1 + 0.8,
-    speedX: (Math.random() - 0.5) * 0.55,
-    speedY: (Math.random() - 0.5) * 0.55,
-    alpha: Math.random() * 0.58 + 0.28
+    radius: Math.random() * 1.8 + 0.7,
+    speedX: (Math.random() - 0.5) * 0.22,
+    speedY: (Math.random() - 0.5) * 0.22,
+    alpha: Math.random() * 0.38 + 0.22
   }));
 }
 
@@ -233,9 +233,9 @@ function drawConnections() {
       const dy = particles[i].y - particles[j].y;
       const distance = Math.hypot(dx, dy);
 
-      if (distance < 165) {
-        ctx.strokeStyle = `rgba(68, 242, 255, ${0.34 - distance / 620})`;
-        ctx.lineWidth = 1.15;
+      if (distance < 150) {
+        ctx.strokeStyle = `rgba(68, 242, 255, ${0.24 - distance / 720})`;
+        ctx.lineWidth = 0.9;
         ctx.beginPath();
         ctx.moveTo(particles[i].x, particles[i].y);
         ctx.lineTo(particles[j].x, particles[j].y);
@@ -267,7 +267,7 @@ function drawPointerConnections() {
 
 function animateParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  huePulse += 0.01;
+  huePulse += 0.004;
 
   particles.forEach((particle) => {
     particle.x += particle.speedX;
@@ -283,16 +283,16 @@ function animateParticles() {
 
       if (distance < pointer.radius && distance > 0) {
         const force = (pointer.radius - distance) / pointer.radius;
-        particle.x += (dx / distance) * force * 0.42;
-        particle.y += (dy / distance) * force * 0.42;
+        particle.x += (dx / distance) * force * 0.18;
+        particle.y += (dy / distance) * force * 0.18;
       }
     }
 
     ctx.beginPath();
     ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(68, 242, 255, ${Math.min(0.95, particle.alpha + Math.sin(huePulse) * 0.08)})`;
-    ctx.shadowColor = "rgba(68, 242, 255, 0.55)";
-    ctx.shadowBlur = 14;
+    ctx.fillStyle = `rgba(68, 242, 255, ${Math.min(0.72, particle.alpha + Math.sin(huePulse) * 0.04)})`;
+    ctx.shadowColor = "rgba(68, 242, 255, 0.45)";
+    ctx.shadowBlur = 9;
     ctx.fill();
     ctx.shadowBlur = 0;
   });
